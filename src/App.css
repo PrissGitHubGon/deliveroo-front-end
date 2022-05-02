@@ -1,38 +1,102 @@
+/*Global CSS*/
 .App {
-  text-align: center;
+  width: 1380px;
+  box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid #e0e0d6;
+}
+.Logo {
+  width: 10%;
+  margin-left: 5%;
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Section Info restaurant*/
+.RestaurantInfos {
+  height: 30%;
+  width: 100%;
+  /* border-bottom: 1px solid #e0e0d6; */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* overflow: hidden; */
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.RestaurantInfo-text {
+  width: 57%;
+}
+.RestaurantInfo-text > h1 {
+  font-size: 32px;
+  line-height: 26.7px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e3333;
+}
+.RestaurantInfo-text > p {
+  font-size: 19px;
+  line-height: 28.8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #868a8a;
+}
+.RestaurantInfo-img > img {
+  height: 197px;
+  width: 349px;
+  border-radius: 2%;
+  margin-left: 17%;
+}
+/*************************Section Info restaurant*/
+.globalItem {
+  display: flex;
+  width: 1380px;
+  /* flex-wrap: wrap; */
+}
+.menuItem {
+  background-color: #f3f5f5;
+  width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.menuItem-Title > h2 {
+  margin-left: 5%;
+  padding-top: 28px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuItem-card {
+  height: 170px;
+  width: 403px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 2%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+.menuItem-text > h3 {
+  font-weight: normal;
+  width: 208px;
+  height: 15px;
+  font-size: 18px;
+  line-height: 15.6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #2e3333;
+  margin-left: 16px;
+}
+.menuItem-text > p {
+  width: 208px;
+  height: 65px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20.8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #808484;
+  margin-left: 16px;
+  /* text-overflow: ellipsis; */
+}
+.menuItem-img > img {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  margin-top: 15px;
+  margin-left: 27%;
+  border-radius: 3%;
 }
