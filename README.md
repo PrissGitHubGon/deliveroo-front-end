@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Deliveroo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##  1️⃣ Projet 
 
-## Available Scripts
+Lors de mes 10 semaines de Bootcamp dans l'école de formation "Le Reacteur", j'ai eu comme exercice la réalisation de la maquette Deliveroo.
 
-In the project directory, you can run:
+J'ai réalisé lors du module back-end une Api permettant :
+* J'ai créer un projet Express dans lequel j'ai ajouter un fichier "index.js" pour y coller le JSON fourni dans la route "/" et je l'ai héberger sur Heroku.
+## Exemple :
+* ``
+app.get("/", (req, res) => {
+  return res.json({
+    restaurant: {
+      path: "Le Pain Quotidien",
+      name: "Le Pain Quotidien - Montorgueil",
+      categories: ["Petit Déjeuner", "Salade", "Brunch", "Boulangerie"],
+      price: "€€",
+      phone: "+33144780895",
+      percentage: 87, .....
+``
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+J'ai réalisé lors du module Front-end :
+* La mise en place de la récupération des données de l'API et de la feuille de styles pour afficher la liste des menus sur la page
+* Grâce aux changements d'états, j'ai créez le panier qui affiche les commandes sélectionné.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
+## Modification à venir
+* ⚠ Refonte du site pour mettre en place la responsive avec Tailwind ou Bootstrap
+* Modifer le panier afin qu'il affiche le montant de la commande.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Lien vers le site 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+⛔ En cours
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Preview 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Aperçu du site avant 🔨🔨 Travaux 🔨🔨
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Deliveroo](https://user-images.githubusercontent.com/87413559/182640594-b72b263a-5a29-4155-8ba7-7ef19d981487.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Construit avec
 
-## Learn More
+FRONT-END
+* create-react-app
+* HTML / CSS
+* yarn
+* react-fontawesome
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+BACK-END
+* "cors": "^2.8.5",
+* "express": "^4.17.3",
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# Commencer à travailler
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Installation
 
-### Making a Progressive Web App
+1. Clone the repo
+* ``git clone https://github.com/PrissGitHubGon/deliveroo-front-end.git``
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Install "Yarn" package
+* ``yarn add``
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Lancer le projet
+* ``yarn start``
